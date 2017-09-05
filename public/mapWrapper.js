@@ -35,7 +35,14 @@ var MapWrapper = function(container, coords, zoom) {
       this.markers.forEach(function(marker) {
         marker.setAnimation(google.maps.Animation.BOUNCE)
       })
-    }
+  },
+
+  MapWrapper.prototype.goToCanada = function() {
+    var canadaOne = {lat: 56.130366, lng: -106.346771};
+    this.googleMap.setCenter(canadaOne);
+    
+  }
+
 
 
 

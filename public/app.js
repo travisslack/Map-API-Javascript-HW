@@ -31,6 +31,9 @@ var initialize = function() {
   var bounceButton = document.querySelector('#button-bounce-markers');
   bounceButton.addEventListener('click', mainMap.bounceMarker.bind(mainMap));
 
+  var canadaButton = document.querySelector('#canada');
+  canadaButton.addEventListener('click', mainMap.goToCanada.bind(mainMap));
+
 }
   
         
